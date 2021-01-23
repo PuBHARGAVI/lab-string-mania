@@ -51,13 +51,13 @@ public class TestStringAdvanceMethod {
 
 	@Test
 	public void testIndexOfMethod() {
-		assertEquals("4", sam.indexOf("Javaprogram", "p"));
-		assertEquals("1", sam.indexOf("Java@", "a"));
-		assertEquals("4", sam.indexOf("Java ", " "));
+		assertEquals("4", sam.indexof("Javaprogram", "p"));
+		assertEquals("1", sam.indexof("Java@", "a"));
+		assertEquals("4", sam.indexof("Java ", " "));
 		try {
-			sam.indexOf("", "");
-			sam.indexOf("Java", "");
-			sam.indexOf("", "Java");
+			sam.indexof("", "");
+			sam.indexof("Java", "");
+			sam.indexof("", "Java");
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
